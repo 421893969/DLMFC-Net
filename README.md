@@ -4,7 +4,7 @@
 |Datasets    | Pretrained| Rank@1  | mAP |  mINP |  Model|
 | --------   | -----    | -----  |  -----  | ----- |------|
 |#RegDB      | ImageNet | ~ 95.84% | ~ 90.78%| -----|----- |
-|#SYSU-MM01  | ImageNet | ~ 66.74%  | ~ 63.72% | -----|
+|#SYSU-MM01  | ImageNet | ~ 66.74%  | ~ 63.72% | -----|----- |
 
 
 ### 1. Prepare the datasets.
