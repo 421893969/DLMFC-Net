@@ -26,12 +26,12 @@ if __name__ == '__main__':
     parser.add_argument('--lr', default=0.1, type=float, help='learning rate, 0.00035 for adam')
     parser.add_argument('--optim', default='sgd', type=str, help='optimizer')
     parser.add_argument('--arch', default='resnet50', type=str, help='network baseline:resnet18 or resnet50')
-    parser.add_argument('--resume', '-r', default='1', type=str, help='resume from checkpoint')
+    parser.add_argument('--resume', '-r', default='', type=str, help='resume from checkpoint')
     parser.add_argument('--test-only', action='store_true', help='test only')
-    parser.add_argument('--model_path', default='save_modelbase1+2+3/', type=str, help='model save path')
+    parser.add_argument('--model_path', default='save_model/', type=str, help='model save path')
     parser.add_argument('--save_epoch', default=100, type=int, metavar='s', help='save model every 10 epochs')
-    parser.add_argument('--log_path', default='logbase1+2+3/', type=str, help='log save path')
-    parser.add_argument('--vis_log_path', default='logbase1+2+3/vis_log/', type=str, help='log save path')
+    parser.add_argument('--log_path', default='log/', type=str, help='log save path')
+    parser.add_argument('--vis_log_path', default='log/', type=str, help='log save path')
     parser.add_argument('--workers', default=4, type=int, metavar='N',help='number of data loading workers (default: 4)')
     parser.add_argument('--img_w', default=192, type=int, metavar='imgw', help='img width')  # 192
     parser.add_argument('--img_h', default=384, type=int, metavar='imgh', help='img height')  # 384
