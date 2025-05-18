@@ -6,24 +6,22 @@
 |#RegDB      | ImageNet | ~ 95.84% | ~ 90.78%| -----|----- |
 |#SYSU-MM01  | ImageNet | ~ 66.74%  | ~ 63.72% | -----|
 
-*Both of these two datasets may have some fluctuation due to random spliting. The results might be better by finetuning the hyper-parameters. 
 
 ### 1. Prepare the datasets.
 
-- (1) RegDB Dataset [3]: The RegDB dataset can be downloaded from this [website](http://dm.dongguk.edu/link.html) by submitting a copyright form.
+- (1) RegDB Dataset [1]: The RegDB dataset can be downloaded from this [website](http://dm.dongguk.edu/link.html) by submitting a copyright form.
 
 - (Named: "Dongguk Body-based Person Recognition Database (DBPerson-Recog-DB1)" on their website). 
 
-- A private download link can be requested via sending me an email (mangye16@gmail.com). 
 
-- (2) SYSU-MM01 Dataset [4]: The SYSU-MM01 dataset can be downloaded from this [website](http://isee.sysu.edu.cn/project/RGBIRReID.htm).
+- (2) SYSU-MM01 Dataset [2]: The SYSU-MM01 dataset can be downloaded from this [website](http://isee.sysu.edu.cn/project/RGBIRReID.htm).
 
 - run `python pre_process_sysu.py` to pepare the dataset, the training data will be stored in ".npy" format.
 
-### 2. Joint Training (Section 4.2).
+### 2. Joint Training.
 Train a model by
 ```bash
-python train_ext.py --dataset sysu --lr 0.1 --method adp --augc 1 --rande 0.5 --alpha 1 --square 1 --gamma 1 --gpu 1
+python train.py --dataset sysu --lr 0.1 --method adp --augc 1 --rande 0.5 --gpu 1
 ```
 
 - `--dataset`: which dataset "sysu" or "regdb".
@@ -48,7 +46,7 @@ You may need mannully define the data path first.
 
 ### 3. Testing.
 
-Test a model on SYSU-MM01 or RegDB dataset by using testing augmentation with HorizontalFlip
+Test a model on SYSU-MM01 or RegDB dataset 
 ```bash
 python testa.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
 ```
@@ -81,11 +79,6 @@ pages     = {13567-13576}
 
 [2] A. Wu, W.-s. Zheng, H.-X. Yu, S. Gong, and J. Lai. Rgb-infrared crossmodality person re-identification. In IEEE International Conference on Computer Vision (ICCV), pages 5380–5389, 2017.
 
-[1] M. Ye, W. Ruan, B. Du, and M. Shou. Channel Augmented Joint Learning for Visible-Infrared Recognition. IEEE International Conference on Computer Vision (ICCV), 2021.
-
-[2] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. 	Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021.
-
-[3] M. Ye, X. Lan, Z. Wang, and P. C. Yuen. Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification. IEEE Transactions on Information Forensics and Security (TIFS), 2019.
 
 
 
