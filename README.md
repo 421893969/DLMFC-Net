@@ -1,14 +1,10 @@
-# Channel Augmented Joint Learning for Visible-Infrared Recognition (ICCV 2021) 
-Pytorch Code of CAJ method [1] for Cross-Modality Person Re-Identification (Visible Thermal Re-ID) on RegDB dataset [4] and SYSU-MM01 dataset [5]. 
-
-A Huawei MindSpore implementation of our proposed method is avaiable at [MindSpore CAJ](https://gitee.com/mindspore/contrib/tree/master/papers/CAJ).
-
-We adopt the two-stream network structure introduced in [2,3].
+# Dual-Level Modality Fusion Compensation: Enhancing Visible-Infrared Person Re-identification via Image and Feature Level Integration 
+ Datasets: Dataset RegDB [1] dan dataset SYSU-MM01 [2].
 
 |Datasets    | Pretrained| Rank@1  | mAP |  mINP |  Model|
 | --------   | -----    | -----  |  -----  | ----- |------|
-|#RegDB      | ImageNet | ~ 85.03% | ~ 79.14%|  ~65.33% |----- |
-|#SYSU-MM01  | ImageNet | ~ 69.88%  | ~ 66.89% | ~53.61% | [GoogleDrive](https://drive.google.com/file/d/1vIKkB61frqA-zG0RiL282heqthvwkKdO/view?usp=sharing)|
+|#RegDB      | ImageNet | ~ 95.84% | ~ 90.78%| -----|----- |
+|#SYSU-MM01  | ImageNet | ~ 66.74%  | ~ 63.72% | -----|
 
 *Both of these two datasets may have some fluctuation due to random spliting. The results might be better by finetuning the hyper-parameters. 
 
@@ -81,14 +77,16 @@ pages     = {13567-13576}
 
 ###  5. References.
 
+[1] D. T. Nguyen, H. G. Hong, K. W. Kim, and K. R. Park. Person recognition system based on a combination of body images from visible light and thermal cameras. Sensors, 17(3):605, 2017.
+
+[2] A. Wu, W.-s. Zheng, H.-X. Yu, S. Gong, and J. Lai. Rgb-infrared crossmodality person re-identification. In IEEE International Conference on Computer Vision (ICCV), pages 5380–5389, 2017.
+
 [1] M. Ye, W. Ruan, B. Du, and M. Shou. Channel Augmented Joint Learning for Visible-Infrared Recognition. IEEE International Conference on Computer Vision (ICCV), 2021.
 
 [2] M. Ye, J. Shen, G. Lin, T. Xiang, L. Shao, and S. C., Hoi. 	Deep learning for person re-identification: A survey and outlook. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021.
 
 [3] M. Ye, X. Lan, Z. Wang, and P. C. Yuen. Bi-directional Center-Constrained Top-Ranking for Visible Thermal Person Re-Identification. IEEE Transactions on Information Forensics and Security (TIFS), 2019.
 
-[4] D. T. Nguyen, H. G. Hong, K. W. Kim, and K. R. Park. Person recognition system based on a combination of body images from visible light and thermal cameras. Sensors, 17(3):605, 2017.
 
-[5] A. Wu, W.-s. Zheng, H.-X. Yu, S. Gong, and J. Lai. Rgb-infrared crossmodality person re-identification. In IEEE International Conference on Computer Vision (ICCV), pages 5380–5389, 2017.
 
-Contact: mangye16@gmail.com
+Contact: jiangtaoguoseu.edu.cn
