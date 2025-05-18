@@ -64,12 +64,13 @@ python testa.py --mode all --resume 'model_path' --gpu 1 --dataset sysu
 
 Please kindly cite this paper in your publications if it helps your research:
 ```
-@inproceedings{iccv21caj,
-author    = {Ye, Mang and Ruan, Weijian and Du, Bo and Shou, Mike Zheng},
-title     = {Channel Augmented Joint Learning for Visible-Infrared Recognition},
-booktitle = {IEEE/CVF International Conference on Computer Vision},
-year      = {2021},
-pages     = {13567-13576}
+@article{,
+  title={Dual-Level Modality Fusion Compensation: Enhancing Visible-Infrared Person Re-identification via Image and Feature Level Integration},
+  author={Du, Haishun and Hao, Xinxin and Li, Jieru and Guo, Jiangtao},
+  journal={},
+  pages={},
+  year={},
+  publisher={}
 }
 ```
 
